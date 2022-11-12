@@ -62,12 +62,12 @@ This rule receives one argument. If the argument is `"always"` then variables re
   :x: **Incorrect**  
   ```js
   import { a, b } from "some-module";
-  import { a,b } from "some-module";
+  import {a,b } from "some-module";
   ```
   :white_check_mark: **Correct**  
   ```js
   import {a, b} from "some-module";
-  import { a, b} from "some-module";
+  import {a} from "some-module";
   ```
 
 > Use [`comma-spacing`](https://eslint.org/docs/latest/rules/comma-spacing) if you want to manage spaces between multiple variables.
