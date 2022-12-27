@@ -1,3 +1,7 @@
 tests
 node_modules
 src
+.eslintrc.json
+.github/*
+tsconfig.json
+*.tgz
