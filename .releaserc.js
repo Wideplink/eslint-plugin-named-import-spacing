@@ -127,12 +127,12 @@ module.exports = {
       }
     ],
     "@semantic-release/npm",
-    // [
-    //   "@semantic-release/github",
-    //   {
-    //     addReleases: "bottom"
-    //   }
-    // ]
+    [
+      "@semantic-release/github",
+      {
+        addReleases: "bottom"
+      }
+    ]
   ],
   parserOpts: {
     noteKeywords: [
