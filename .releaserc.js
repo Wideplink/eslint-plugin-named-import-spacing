@@ -10,6 +10,7 @@ module.exports = {
     [
       "@semantic-release/commit-analyzer",
       {
+        preset: "conventionalcommits",
         releaseRules: [
           {
             type: "Docs",
@@ -74,51 +75,51 @@ module.exports = {
         presetConfig: {
           types: [
             {
-              type: "Docs",
+              type: "docs",
               section: "Documentation"
             },
             {
-              type: "Fix",
+              type: "fix",
               section: "Bug fixes"
             },
             {
-              type: "Chore",
-              hidden: "Chore"
+              type: "chore",
+              section: "Chore"
             },
             {
-              type: "Feat",
+              type: "feat",
               section: "Features"
             },
             {
-              type: "Perf",
+              type: "perf",
               section: "Improvements"
             },
             {
-              type: "Improve",
+              type: "improve",
               section: "Improvements"
             },
             {
-              type: "Change",
+              type: "change",
               section: "Changes"
             },
             {
-              type: "Update",
+              type: "update",
               hidden: true
             },
             {
-              type: "Add",
+              type: "add",
               hidden: true
             },
             {
-              type: "Remove",
+              type: "remove",
               section: "Changes"
             },
             {
-              type: "Rename",
+              type: "rename",
               hidden: true
             },
             {
-              type: "Revert",
+              type: "revert",
               section: "Changes"
             }
           ]
@@ -126,12 +127,12 @@ module.exports = {
       }
     ],
     "@semantic-release/npm",
-    [
-      "@semantic-release/github",
-      {
-        addReleases: "bottom"
-      }
-    ]
+    // [
+    //   "@semantic-release/github",
+    //   {
+    //     addReleases: "bottom"
+    //   }
+    // ]
   ],
   parserOpts: {
     noteKeywords: [
