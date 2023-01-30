@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-named-import-spacing",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": false,
   "description": "adjust spacing in brackets of named imports",
   "keywords": [
