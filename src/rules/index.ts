@@ -1,4 +1,4 @@
-import destrcturingImportSpacing from "./destructuring-import-spacing";
+import destrcturingImportSpacing from "./named-import-spacing";
 export default {
-  "destructuring-import-spacing": destrcturingImportSpacing,
+  "named-import-spacing": destrcturingImportSpacing,
 };

@@ -1,5 +1,5 @@
-# eslint-plugin-destructuring-import-spacing
-[![npm](https://img.shields.io/npm/v/eslint-plugin-destructuring-import-spacing)](https://npmjs.com/package/eslint-plugin-destructuring-import-spacing)
+# eslint-plugin-named-import-spacing
+[![npm](https://img.shields.io/npm/v/eslint-plugin-named-import-spacing)](https://npmjs.com/package/eslint-plugin-named-import-spacing)
 
 adjust spacing in brackets of named imports
 
@@ -11,20 +11,20 @@ You'll first need to install [ESLint](https://eslint.org/):
 npm i eslint --save-dev
 ```
 
-Next, install `eslint-plugin-destructuring-import-spacing`:
+Next, install `eslint-plugin-named-import-spacing`:
 
 ```sh
-npm install eslint-plugin-destructuring-import-spacing --save-dev
+npm install eslint-plugin-named-import-spacing --save-dev
 ```
 
 ## Usage
 
-Add `destructuring-import-spacing` to the plugins section of your `.eslintrc` configuration file. You can omit the `eslint-plugin-` prefix:
+Add `named-import-spacing` to the plugins section of your `.eslintrc` configuration file. You can omit the `eslint-plugin-` prefix:
 
 ```json
 {
     "plugins": [
-        "destructuring-import-spacing"
+        "named-import-spacing"
     ]
 }
 ```
@@ -35,14 +35,14 @@ Then configure the rules you want to use under the rules section.
 ```json
 {
     "rules": {
-        "destructuring-import-spacing/destructuring-import-spacing": 2
+        "named-import-spacing/named-import-spacing": 2
     }
 }
 ```
 
 ## Supported Rules
 
-### `destructuring-import-spacing`
+### `named-import-spacing`
 Format spaces in named import statements
 
 #### Options
