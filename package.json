@@ -20,10 +20,12 @@
     "test": "tsc && mocha tests --recursive",
     "cleanup": "rimraf dist"
   },
+  "dependencies": {
+    "@typescript-eslint/utils": "^5.13.0"
+  },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.42.1",
     "@typescript-eslint/parser": "^5.42.1",
-    "@typescript-eslint/utils": "^5.42.1",
     "eslint": "^8.19.0",
     "eslint-plugin-eslint-plugin": "^5.0.0",
     "eslint-plugin-node": "^11.1.0",
