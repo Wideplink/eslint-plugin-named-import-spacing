@@ -1,8 +1,16 @@
+const assert = require("assert");
 const { RuleTester } = require("eslint");
 
-const tester = new RuleTester();
+const targetFromRoot = require("../../dist").rules["named-import-spacing"];
+const target = require("../../dist/rules/named-import-spacing");
 
-const target = require("../../dist/rules/destructuring-import-spacing");
+describe("Load the rule successfully", function(){
+  it("Equal", function(){
+    assert.equal(targetFromRoot, target.default);
+  });
+});
+
+const tester = new RuleTester();
 const parserOptions = {
   sourceType: "module",
   ecmaVersion: 2015,

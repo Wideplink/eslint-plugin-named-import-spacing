@@ -1,5 +1,5 @@
 {
-  "name": "eslint-plugin-destructuring-import-spacing",
+  "name": "eslint-plugin-named-import-spacing",
   "version": "1.0.0",
   "private": false,
   "description": "adjust spacing in brackets of named imports",
@@ -7,8 +7,9 @@
     "eslint",
     "eslintplugin",
     "eslint-plugin",
-    "destructuring",
-    "import"
+    "import",
+    "named-import",
+    "named-imports"
   ],
   "author": "Wideplink",
   "main": "./dist/index.js",
@@ -16,7 +17,8 @@
   "scripts": {
     "lint": "eslint .",
     "build": "tsc",
-    "test": "tsc && mocha tests --recursive"
+    "test": "tsc && mocha tests --recursive",
+    "cleanup": "rimraf dist"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.42.1",
@@ -26,6 +28,7 @@
     "eslint-plugin-eslint-plugin": "^5.0.0",
     "eslint-plugin-node": "^11.1.0",
     "mocha": "^10.0.0",
+    "rimraf": "^4.1.2",
     "typescript": "^4.8.4"
   },
   "engines": {
@@ -36,10 +39,10 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Wideplink/eslint-plugin-destructuring-import-spacing/issues"
+    "url": "https://github.com/Wideplink/eslint-plugin-named-import-spacing/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Wideplink/eslint-plugin-destructuring-import-spacing"
+    "url": "https://github.com/Wideplink/eslint-plugin-named-import-spacing"
   }
 }
