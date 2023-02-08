@@ -8,3 +8,4 @@ tsconfig.json
 .commitlintrc.json
 .releaserc.js
 .husky/*
+.vscode/*
